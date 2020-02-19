@@ -23,7 +23,8 @@ Route::get('/contact', 'SiteController@contact');
 
 Route::get('/about', 'SiteController@about');
 
-Route::get('/account', 'SiteController@account');
+Route::get('/cadastro', 'SiteController@cadastro');
 
 Route::get('/sac', 'SiteController@sac');
 
+Route::get('/teste', 'SiteController@teste');

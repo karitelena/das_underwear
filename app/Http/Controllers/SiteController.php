@@ -27,12 +27,16 @@ class SiteController extends Controller
         return view ('about');
     }
 
-    public function account() {
-        return view ('account');
+    public function cadastro() {
+        return view ('cadastro');
     }
 
     public function sac() {
         return view ('sac');
+    }
+
+    public function teste() {
+        return view ('teste');
     }
 
 }
