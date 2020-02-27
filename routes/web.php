@@ -13,7 +13,7 @@
 
 Route::get('/', 'SiteController@index');
 
-Route::get('/shop', 'ProdutoController@index');
+Route::get('/shop', 'SiteController@shop');
 
 Route::get('/collection', 'SiteController@collection');
 
@@ -28,3 +28,11 @@ Route::get('/cadastro', 'SiteController@cadastro');
 Route::get('/sac', 'SiteController@sac');
 
 Route::get('/teste', 'SiteController@teste');
+
+Route::group(['prefix' => 'painel'], function() {
+
+    Route::get('/', 'ProdutoController@index');
+
+    Route::get('/produtos', 'ProdutoController@produto');
+    
+});

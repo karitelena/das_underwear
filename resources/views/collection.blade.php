@@ -1,4 +1,4 @@
-@extends ('template')
+@extends ('template.template')
 
 @section ('content')
 <div class="d-flex justify-content-center">

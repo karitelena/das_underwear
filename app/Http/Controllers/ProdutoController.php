@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Painel\Produto;
 
 class ProdutoController extends Controller
 {
@@ -11,9 +12,19 @@ class ProdutoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
-        return view ('shop');
+        
+        return view ('painel.painel');
+    }
+
+    public function produto ()
+    {
+        $produto = new Produto; 
+        $produtos = $produto->all();
+        
+        return view ('painel.produtos', compact ('produtos'));
     }
 
     /**
