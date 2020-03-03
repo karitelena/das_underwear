@@ -21,23 +21,20 @@
                     <!-- INICIO NAV DESKTOP -->
                     <ul class="nav justify-content-end">
                         <li class="nav-item" id="desktop">
-                            <a class="nav-link" href="/shop">SHOP</a>
-                        </li>
-                        <li class="nav-item" id="desktop">
                             <div id="myEnternav" class="enternav nav-item">
                                 <form action="POST">
                                     <a href="javascript:void(0)" class="closebtnEnter" onclick="closeEnternav()">&times;</a>
-                                        <h3 class="text-left p-2" >LOGIN</h3>
-                                        <div class="form-group">
-                                            <label for="email">EMAIL </label>
-                                            <input name="email" type="email" class="form-control text-dark" id="email" style="text-transform:uppercase" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="senha">SENHA</label>
-                                            <input name="senha" type="password" class="form-control text-dark" id="senha" required>
-                                            <a href="/cadastro" id="naoCadastrado" class="form-text p-2">AINDA NÃO É CADASTRADO?</a>
-                                         </div>
-                                        <button type="submit" style="height: 400px" class="btn btn-block text-left">ENTER ;)</button>
+                                    <h3 class="text-left p-2" >LOGIN</h3>
+                                    <div class="form-group">
+                                        <label for="email">EMAIL </label>
+                                        <input name="email" type="email" class="form-control text-dark" id="email" style="text-transform:uppercase" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="senha">SENHA</label>
+                                        <input name="senha" type="password" class="form-control text-dark" id="senha" required>
+                                        <a href="/cadastro" id="naoCadastrado" class="form-text p-2">AINDA NÃO É CADASTRADO?</a>
+                                    </div>
+                                    <button type="submit" style="height: 400px" class="btn btn-block text-left">ENTER ;)</button>
                                 </form>
                             </div>
                             <span class="nav-link enternavSpan" style="font-size:13px;cursor:pointer" onclick="openEnternav()">ENTER</span>
@@ -50,6 +47,9 @@
                                     document.getElementById("myEnternav").style.width = "0";
                                 }
                             </script> 
+                        </li>
+                        <li class="nav-item" id="desktop">
+                            <a class="nav-link" href="/shop">SHOP</a>
                         </li>
                         <li class="nav-item" id="desktop">
                             <a class="nav-link" href="#">CART(0)</a>
@@ -69,7 +69,7 @@
                                     <a href="/archive">ARCHIVE</a>
                                     <a href="/about">ABOUT</a>
                                     <a href="/contact">CONTATO</a>
-                                    <a href="#">FAQ</a>
+                                    <a href="/faq">FAQ</a>
                                     <a href="https://www.instagram.com/das_underwear/" target="_blank">INSTAGRAM</a>
                             </div>
                             <span class="nav-link sidenavSpan" style="font-size:13px;cursor:pointer" onclick="openNav()">MENU</span>

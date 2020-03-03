@@ -1,4 +1,6 @@
 * {
+    margin:0;
+    padding:0;
     box-sizing: border-box;
 }
 body,html {
@@ -11,7 +13,8 @@ body,html {
 }
 /* HEADER */
 .container {
-    max-width: 1300px;
+    width:100%;
+    /* max-width: 1300px; */
     height: 815px;
     border: 1px solid black;
     font-size: 13px;
@@ -199,15 +202,10 @@ input#search-bar{
 }
 /* MAIN  */
 main {
+    width: 100%;
     border-left: 1px solid black;
     border-right: 1px solid black;
-    position: relative;
-    width: 100%;
     height: auto;
-}
-main>img {
-    border: 2px solid black;
-    align-items: flex-end;
 }
 main h1 {
     text-align: right;
@@ -260,6 +258,14 @@ button {
 }
 .form-control {
     color:#BB3FB0;
+}
+.contato option {
+    width:100%;
+    text-align: right;
+    display:block;
+}
+#select {
+    padding-left: 85%;
 }
 /* SOBRE */
 .sobre {
@@ -327,12 +333,11 @@ button {
 }
 /* SHOPLIST */
 .shopList {
-    margin: 0 auto;
-    flex-direction: row;
-    flex-flow: column nowrap;
-    justify-content: center;
+    width:100%;
+    margin: 0;
+    justify-items: center;
 }
-.container-fluid, .col-md {
+.container-fluid {
     padding-right:0;
     padding-left:0;
     margin: 0;
@@ -351,6 +356,13 @@ button {
 }
 .shopList .card{
     border:none;
+}
+/* FAQ */
+.navFaq a {
+    color: black;
+}
+.navFaq a:hover {
+    color: #BB3FB0; 
 }
 /* FOOTER */
 footer {
@@ -396,10 +408,34 @@ marquee {
     
 }
 /* ALTERACOES TABLET*/
-@media (min-width: 650px) and (max-width: 969px) {
+@media (min-width: 756px) and (max-width: 969px) {
+    /* HEADER */
+    .container {
+        height: 500px;
+    }
+    .logo img {
+         width: 250px;
+    }
+    .navMenu #desktop {
+         display:none;
+    }
+     /* SHOP */
+    .shopList {
+         margin: 0 auto;
+         justify-content: center;
+    }
+    .card-group .productItem {
+         padding:0;
+         display:flex;
+         flex-wrap: wrap;
+    }
+ }
+
+@media (min-width: 650px) and (max-width: 755px) {
     /* HEADER */
     .container {
        height: 500px;
+       border: none;
     }
     .logo img {
         width: 250px;
@@ -422,7 +458,7 @@ marquee {
 @media (min-width: 345px) and (max-width: 649px) {
     /* HEADER */
     .container {
-        height: 100%;;
+        height: 100%;
     }
     .logo img {
         width: 180px;
@@ -433,13 +469,13 @@ marquee {
     /* SHOP */
     .card-group .productItem {
         display:block;
-    }  
+    }
+    /* FOOTER */
 }
 @media (max-width: 345px) {
     /* HEADER */
     .container {
-        background-color:green;
-        height: 100%;;
+        height: 100%;
     }
     .logo img {
         width: 150px;

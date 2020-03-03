@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Produtos;
-use App\Http\Controllers\ProdutoController;
+use App\Models\Painel\Produto;
 
 class ProdutoTableSeeder extends Seeder
 {
@@ -19,7 +18,7 @@ class ProdutoTableSeeder extends Seeder
             'color' => 'black',
             'size' => 'M',
             'price' => '59,90',
-            'active' => true,
+            'active' => 1,
             'description' => 'Composição
                             90% Poliamida 6.6 Nylon
                             10% Elastano

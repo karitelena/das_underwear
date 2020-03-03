@@ -36,8 +36,8 @@ class SiteController extends Controller
         return view ('cadastro');
     }
 
-    public function sac() {
-        return view ('sac');
+    public function faq() {
+        return view ('faq');
     }
 
     public function teste() {

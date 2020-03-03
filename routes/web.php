@@ -25,7 +25,7 @@ Route::get('/about', 'SiteController@about');
 
 Route::get('/cadastro', 'SiteController@cadastro');
 
-Route::get('/sac', 'SiteController@sac');
+Route::get('/faq', 'SiteController@faq');
 
 Route::get('/teste', 'SiteController@teste');
 
