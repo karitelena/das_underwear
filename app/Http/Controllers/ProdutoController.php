@@ -21,10 +21,14 @@ class ProdutoController extends Controller
 
     public function produto ()
     {
-        $produto = new Produto; 
-        $produtos = $produto->all();
+        $produtos = Produto::all();
         
         return view ('painel.produtos', compact ('produtos'));
+    }
+
+    public function item ( Produto $produto )
+    {
+        return view ('item', compact ('produto'));
     }
 
     /**

@@ -13,7 +13,7 @@
 
 Route::get('/', 'SiteController@index');
 
-Route::get('/shop', 'SiteController@shop');
+// Route::get('/shop', 'SiteController@shop');
 
 Route::get('/collection', 'SiteController@collection');
 
@@ -34,5 +34,14 @@ Route::group(['prefix' => 'painel'], function() {
     Route::get('/', 'ProdutoController@index');
 
     Route::get('/produtos', 'ProdutoController@produto');
+    
+});
+
+Route::group(['prefix' => 'shop'], function() {
+
+    Route::get('/', 'SiteController@shop');
+
+    Route::get('/item/{produto}', 'ProdutoController@item');
+
     
 });

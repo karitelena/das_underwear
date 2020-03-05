@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Painel\Produto;
 
 class SiteController extends Controller
 {
@@ -13,7 +14,8 @@ class SiteController extends Controller
 
     public function shop()
     {
-        return view ('shop');
+        $produtos = Produto::all();
+        return view ('shop', compact('produtos'));
     }
 
     public function collection() {

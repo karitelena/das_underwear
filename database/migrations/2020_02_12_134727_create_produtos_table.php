@@ -22,7 +22,8 @@ class CreateProdutosTable extends Migration
             $table->string('price',100);
             $table->boolean('active');
             $table->text('description');
-            $table->enum('category',['up', 'bottom', 'suit','acessories']);
+            $table->string('image')->nullable();
+            $table->enum('category',['top', 'bottom', 'suit','acessories']);
             $table->timestamps();
         });
     }

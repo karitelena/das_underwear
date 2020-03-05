@@ -21,12 +21,12 @@
             </li>
         </ul>
         <div class="tab-content p-2" id="myTabContent">
-            <div class="tab-pane fade" id="entregas" role="tabpanel" aria-labelledby="entregas-tab">
+            <div class="tab-pane fade show active" id="entregas" role="tabpanel" aria-labelledby="entregas-tab">
             OS PEDIDOS SÃO PROCESSADOS EM ATÉ 5 DIAS ÚTEIS APÓS A CONFIRMAÇÃO DA COMPRA. A ENTREGA É FEITA POR CORREIOS E O PRAZO VARIA DE ACORDO COM O CEP. <br>
             >>>>> PREÇOS FIXOS DE R$15 PARA CAPITAL DE SÃO PAULO / R$20 ______ / R$25 DEMAIS REGIÕES. <br>
             >>>>> VERIQUE SE O ENDEREÇO FORNECIDO É CORRETO. EM CASO DE RETORNO DE PEDIDOS POR CONTA DE ENDEREÇO INCORRETO, SERÁ COBRADO O FRETE NOVAMENTE. 
             </div>
-            <div class="tab-pane fade show active" id="troca" role="tabpanel" aria-labelledby="troca-tab">
+            <div class="tab-pane fade" id="troca" role="tabpanel" aria-labelledby="troca-tab">
             CASO O PRODUTO APRESENTE ALTERAÇÕES NA QUALIDADE OU DIVERGÊNCIAS DE TAMANHO/MODELO, SOLICITE A SUBSTITUIÇÃO EM ATÉ 7 DIAS APÓS O RECEBIMENTO PELO FORMULÁRIO DE <a href="/contact">CONTATO</a>. <br>
             SÓ SERÃO ACEITOS OS ITENS QUE ESTIVEREM SEM INDÍCIOS DE USO, DENTRO DA EMBALAGEM E ENVIADOS ATÉ O PRAZO PERMITIDO.  <br>  
             >>>>> NÃO TROCAMOS ROUPAS DE BAIXO. VERIFIQUE NA DESCRIÇÃO DO ITEM SE EXISTE A POSSIBILIDADE DE TROCA ANTES DE EFETUAR A COMPRA. </div>
