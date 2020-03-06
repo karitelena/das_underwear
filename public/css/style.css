@@ -198,6 +198,7 @@ input#search-bar{
     transition: opacity 0.45s ease; 
     opacity: 0;
 }
+
 /* MAIN  */
 main {
     width: 100%;
@@ -207,7 +208,12 @@ main {
 }
 main h1 {
     text-align: right;
-    font-size:18px;  
+    font-size:18px; 
+}
+/* INDEX */
+.collectionTitle h1 {
+    font-size: 20px;
+    padding:5px;
 }
 /* CONTATO */
 .contato h2 {
@@ -359,9 +365,18 @@ button {
     text-align: center;
 }
 /* ITEM */
-.item img {
+.itemImages {
+    max-height: 100vh;
+    overflow: scroll;
+}
+.still img {
     max-width: 500px;
     min-width: 200px;
+}
+.lookbook img {
+    margin-top:15px;
+    max-width: 600px;
+    transform: rotate(270deg);
 }
 .itemDescription {
     outline: 1px solid black;
@@ -374,6 +389,22 @@ button {
 }
 .col-6 {
     padding:0;
+}
+/* COLLECTION */
+.collection {
+    overflow:hidden;
+    background-color:white; 
+}
+.collection img {
+    transform: rotate(270deg);
+    padding: 10px;
+    height: auto;
+    width: 700px;
+    outline: 2px black solid;
+    background-size:cover;
+}
+.collection img:hover {
+   background-color:#dbdbdb;
 }
 /* FAQ */
 .navFaq a {
